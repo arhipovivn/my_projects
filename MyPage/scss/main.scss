@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy-Bold";
+    ul li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+@import "_wrapper";
+// @import "_header";
+// @import "_nav";
+// @import "_about";
+// @import "_services";
+// @import "_getInTouch";
+// @import "_footer.scss";

@@ -1,0 +1,30 @@
+@import "_nav";
+.name {
+    position: absolute;
+    left: 20%;
+    right: 74.08%;
+    top: 2%;
+    bottom: 94.82%;
+    font-size: 47.3392px;
+    line-height: 59px;
+    color: #070707;
+}
+
+.info {
+    position: absolute;
+    left: 46.49%;
+    right: 42.74%;
+    top: 3%;
+    bottom: 95.22%;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+}
+
+.mainImg img {
+    position: absolute;
+    width: 60%;
+    height: 450px;
+    left: 20%;
+    top: 5%;
+}

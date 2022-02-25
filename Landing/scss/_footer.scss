@@ -1,0 +1,184 @@
+.newsLetter {
+    position: absolute;
+    top: 2399px;
+    width: 100%;
+    height: 100px;
+    background: #171819;
+    .signup {
+        position: absolute;
+        width: 250px;
+        height: 30px;
+        left: 20%;
+        top: 35px;
+        font-family: "Open Sans";
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 26px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        letter-spacing: 0.846154px;
+        color: #FFFFFF;
+    }
+    input {
+        position: absolute;
+        width: 250px;
+        height: 40px;
+        left: 52%;
+        top: 35px;
+        background: #FFFFFF;
+        border: 1px solid #979797;
+        box-sizing: border-box;
+    }
+    .buttn1 {
+        width: 100%;
+        height: 20%;
+        .button {
+            position: absolute;
+            left: 916px;
+            top: 35px;
+            margin-left: auto;
+            font-family: "Open Sans";
+            position: absolute;
+            font-size: 1rem;
+            font-weight: 400;
+            height: 40px;
+            transition: .3s cubic-bezier(1, 0, 0, 1), color .3s cubic-bezier(1, 0, 0, 1);
+            min-width: 180px;
+            padding: 0 20px;
+            border: 0px solid #fff;
+            color: #fff;
+            text-align: center;
+            outline: none;
+            background-color: transparent;
+            background: #00A4E5;
+        }
+        button:hover {
+            background-color: #67bfe7;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    top: 2499px;
+    width: 100%;
+    height: 240px;
+    background: #141A20;
+    .company {
+        position: absolute;
+        width: 59px;
+        height: 15px;
+        left: 248px;
+        top: 40px;
+        font-family: "Open Sans";
+        font-size: 11px;
+        line-height: 13px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        letter-spacing: 0.846154px;
+        color: #FFFFFF;
+    }
+    .projLogoWhite {
+        position: absolute;
+        left: 248px;
+        right: -0.15%;
+        top: 76px;
+        bottom: 6.13%;
+        img {
+            height: 15%;
+        }
+    }
+    .loream {
+        position: absolute;
+        width: 250px;
+        height: 76px;
+        left: 250px;
+        top: 114px;
+        font-family: "Open Sans";
+        font-size: 11px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.85px;
+        color: #FFFFFF;
+    }
+    .link {
+        position: absolute;
+        width: 34px;
+        height: 15px;
+        left: 570px;
+        top: 40px;
+        font-family: "Open Sans";
+        font-size: 11px;
+        line-height: 13px;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 0.846154px;
+        color: #FFFFFF;
+    }
+    .elementFooter {
+        position: absolute;
+        width: 76px;
+        height: 125px;
+        left: 570px;
+        top: 67px;
+        font-family: "Open Sans";
+        font-size: 11px;
+        line-height: 25px;
+        align-items: center;
+        letter-spacing: 0.846154px;
+        color: #FFFFFF;
+        a {
+            font-family: "Open Sans";
+            color: floralwhite;
+        }
+    }
+    .contact {
+        position: absolute;
+        width: 100px;
+        height: 15px;
+        left: 820px;
+        top: 45px;
+        font-family: "Open Sans";
+        font-size: 11px;
+        line-height: 13px;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 0.846154px;
+        color: #FFFFFF;
+    }
+    .us {
+        position: absolute;
+        width: 150px;
+        height: 128px;
+        left: 820px;
+        top: 40px;
+        font-size: 11px;
+        line-height: 16px;
+        /* or 145% */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.846154px;
+        color: #FFFFFF;
+        p {
+            font-family: "Open Sans";
+        }
+        .number {
+            position: absolute;
+            width: 200px;
+            height: 10px;
+            left: 0px;
+            top: 120px;
+        }
+        .mailFoot {
+            position: absolute;
+            width: 200px;
+            height: 20px;
+            left: 0px;
+            top: 140px;
+        }
+    }
+}

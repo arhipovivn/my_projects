@@ -1,0 +1,13 @@
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 4600px;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    @import "_header";
+    @import "_about";
+    @import "skills";
+    @import "_portfolio";
+    @import "_footer.scss";
+}

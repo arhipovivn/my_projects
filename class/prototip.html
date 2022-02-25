@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function Сar(name, color) {
+        //     this.name = name;
+        //     this.color = color;
+
+        // }
+        // let tesla = new Сar('tesla', 'red')
+
+        // Сar.prototype.show = function() { // так добавляется метод для объета созданного через конструктор 
+        //     console.log(this.name, this.color)
+        // }
+        // tesla.show();
+
+
+
+        // ! теперь поработаем с классами !!!
+        class Car {
+            constructor(brand, color) {
+                this.brand = brand;
+                this.color = color;
+            }
+            show() {
+                console.log(this.brand, this.color, this.name)
+            }
+            set rating(value) { // для добавления нужно в консоли присвоить tesla.rating='любое значение' и потом по вызову будет выводить это св-во
+                this.name = value;
+            }
+        }
+        let tesla = new Car('tesla', 'red')
+        console.log(tesla);
+        tesla.show() // этот код делает то же самое что и выше с функцией
+            // но работать с методами проще через класс их проще добавлять и работать с ними чем черз фии конструкторы
+            // но по сути класс делате тоже самое что и функция конструктор
+        class Hybrid extends Car { // =гибрид наследует все свойства и методы из car 
+            constructor(brand, model) {
+                super(brand, color) // обращение к car(brand) таак надо писть чтобы не было ощибки 
+                this.model = model;
+
+            }
+        }
+        let toyota = new Hybrid('toyota', 'prius');
+        toyota.show(); // у тоеты есть тот же метод что и у кар произошло наследование
+    </script>
+</body>
+
+</html>

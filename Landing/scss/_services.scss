@@ -1,0 +1,202 @@
+.services {
+    position: relative;
+    top: 1400px;
+    width: 930px;
+    height: 446px;
+    left: 210px;
+    bottom: 1011px;
+    .over {
+        position: absolute;
+        display: inline-block;
+        align-items: flex-start;
+        width: 400px;
+        height: 25px;
+        left: 0px;
+        top: -1px;
+        font-family: "Open Sans";
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 2.30625px;
+        color: #48555B;
+    }
+    .mainText {
+        position: absolute;
+        width: 405.4px;
+        height: 38px;
+        left: 290px;
+        top: 0px;
+        font-family: "Open Sans";
+        font-size: 11px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.2px;
+        color: #48555B;
+    }
+    .but {
+        width: 100%;
+        height: 20%;
+        .button {
+            right: 3.5%;
+            margin-left: auto;
+            font-family: "Open Sans";
+            position: absolute;
+            font-size: 1rem;
+            font-weight: 400;
+            height: 50px;
+            transition: .3s cubic-bezier(1, 0, 0, 1), color .3s cubic-bezier(1, 0, 0, 1);
+            min-width: 180px;
+            padding: 0 20px;
+            border: 0px solid #fff;
+            color: #fff;
+            text-align: center;
+            outline: none;
+            background-color: transparent;
+            background: #00A4E5;
+        }
+        button:hover {
+            background-color: #67bfe7;
+            color: rgb(255, 255, 255);
+        }
+    }
+    .serviceOne {
+        position: absolute;
+        width: 295px;
+        height: 330px;
+        left: 0px;
+        top: 170px;
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        box-sizing: border-box;
+        .bdimg {
+            position: absolute;
+            width: 65.62px;
+            height: 75px;
+            left: 23px;
+            top: 38px;
+            background: url(image/servis1.png);
+        }
+        .serviceOneText {
+            position: absolute;
+            width: 250px;
+            height: 48px;
+            left: 23px;
+            top: 138px;
+            font-family: "Open Sans";
+            font-size: 16px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.426667px;
+            color: #48555B;
+        }
+        .serviceOneMainText {
+            position: absolute;
+            width: 250px;
+            height: 92px;
+            left: 23px;
+            top: 199px;
+            font-family: "Open Sans";
+            font-size: 13px;
+            line-height: 23px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.1875px;
+            color: #48555B;
+        }
+    }
+    .serviceTwo {
+        position: absolute;
+        width: 295px;
+        height: 330px;
+        left: 33%;
+        top: 170px;
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        box-sizing: border-box;
+        .bdimg1 {
+            position: absolute;
+            width: 68px;
+            height: 75px;
+            left: 23px;
+            top: 38px;
+            background: url(image/service2.png);
+        }
+        .serviceTwoText {
+            position: absolute;
+            width: 250px;
+            height: 48px;
+            left: 23px;
+            top: 138px;
+            font-family: "Open Sans";
+            font-size: 16px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.426667px;
+            color: #48555B;
+        }
+        .serviceTwoMainText {
+            position: absolute;
+            width: 250px;
+            height: 92px;
+            left: 23px;
+            top: 199px;
+            font-family: "Open Sans";
+            font-size: 13px;
+            line-height: 23px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.1875px;
+            color: #48555B;
+        }
+    }
+    .serviceTree {
+        position: absolute;
+        width: 295px;
+        height: 330px;
+        left: 66%;
+        top: 170px;
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        box-sizing: border-box;
+        .bdimg2 {
+            position: absolute;
+            width: 68px;
+            height: 75px;
+            left: 23px;
+            top: 38px;
+            background: url(image/service3.png);
+        }
+        .serviceTreeText {
+            position: absolute;
+            width: 250px;
+            height: 48px;
+            left: 23px;
+            top: 138px;
+            font-family: "Open Sans";
+            font-size: 16px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.426667px;
+            color: #48555B;
+        }
+        .serviceTreeMainText {
+            position: absolute;
+            width: 250px;
+            height: 92px;
+            left: 23px;
+            top: 199px;
+            font-family: "Open Sans";
+            font-size: 13px;
+            line-height: 23px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.1875px;
+            color: #48555B;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.footer {
+    .contact {
+        position: absolute;
+        left: 44.89%;
+        right: 45.03%;
+        top: 95%;
+        bottom: 9.76%;
+        font-family: "Gilroy-Bold";
+        font-size: 34px;
+        line-height: 42px;
+        text-align: center;
+        color: #070707;
+    }
+    .text {
+        position: absolute;
+        left: 35.86%;
+        right: 40.1%;
+        top: 96.7%;
+        width: 30%;
+        font-family: "Gilroy-Medium";
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+    }
+    button {
+        top: 98%;
+        left: 44%;
+        margin-left: auto;
+        font-family: "Gilroy-Medium";
+        position: absolute;
+        font-size: 1rem;
+        font-weight: 400;
+        height: 50px;
+        border-radius: 30px;
+        transition: 0.3s cubic-bezier(1, 0, 0, 1), color 0.3s cubic-bezier(1, 0, 0, 1);
+        min-width: 180px;
+        padding: 0 20px;
+        border: 0px solid #fff;
+        color: #fff;
+        text-align: center;
+        outline: none;
+        background-color: transparent;
+        background: #000000;
+    }
+    button:hover {
+        background-color: #2b2f31;
+        color: white;
+    }
+}

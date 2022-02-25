@@ -1,0 +1,131 @@
+        .about {
+            overflow: hidden;
+            width: 100%;
+            background-size: cover;
+            .titleAbout {
+                position: absolute;
+                width: 121px;
+                height: 25px;
+                left: 46%;
+                top: 880px;
+                font-family: "Open Sans";
+                font-size: 18px;
+                line-height: 21px;
+                display: inline-block;
+                align-items: flex-start;
+                text-align: center;
+                letter-spacing: 2.30625px;
+                color: #48555B;
+            }
+            .titleAbout::after {
+                content: ' ';
+                display: flex;
+                width: 121px;
+                height: 2px;
+                left: 447px;
+                top: 995px;
+                border-bottom: 2px solid #00A4E5;
+            }
+            .firstText {
+                position: absolute;
+                width: 405.08px;
+                height: 81px;
+                left: 210px;
+                top: 1010px;
+                font-family: "Open Sans";
+                font-size: 20px;
+                line-height: 23px;
+                display: flex;
+                align-items: flex-end;
+                letter-spacing: 0.1875px;
+                color: #48555B;
+            }
+            .secondText {
+                position: absolute;
+                width: 405.08px;
+                height: 115px;
+                left: 210px;
+                top: 1100px;
+                font-family: "Open Sans";
+                font-size: 13px;
+                line-height: 23px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.1875px;
+                color: #48555B;
+            }
+            .wrPlan {
+                position: absolute;
+                // background-size: cover;
+                // overflow: hidden;
+                width: 400px;
+                height: 300px;
+                left: 51%;
+                top: 1050px;
+                background: url(image/Bitmap.png);
+                background-repeat: no-repeat;
+                .plan {
+                    position: relative;
+                    display: inline-block;
+                    width: 15px;
+                    height: 58px;
+                    left: 5px;
+                    top: 15px;
+                    text-transform: uppercase;
+                    font-family: "Open Sans";
+                    font-size: 30px;
+                    font-weight: 800;
+                    align-items: center;
+                    letter-spacing: 0.1875px;
+                    color: #FFFFFF;
+                }
+            }
+            .wrManage {
+                position: absolute;
+                width: 200px;
+                height: 300px;
+                left: 63%;
+                top: 1050px;
+                background: url(image/Bitmap2.png);
+                background-repeat: no-repeat;
+                .manage {
+                    position: relative;
+                    display: inline-block;
+                    width: 15px;
+                    height: 58px;
+                    left: 5px;
+                    top: 15px;
+                    text-transform: uppercase;
+                    font-family: "Open Sans";
+                    font-size: 30px;
+                    font-weight: 800;
+                    align-items: center;
+                    letter-spacing: 0.1875px;
+                    color: #FFFFFF;
+                }
+            }
+            .wrBuild {
+                position: absolute;
+                width: 200px;
+                height: 300px;
+                left: 75%;
+                top: 1050px;
+                background: url(image/Bitmap3.png);
+                background-repeat: no-repeat;
+                .build {
+                    position: relative;
+                    display: inline-block;
+                    width: 15px;
+                    height: 58px;
+                    left: 5px;
+                    top: 15px;
+                    text-transform: uppercase;
+                    font-family: "Open Sans";
+                    font-size: 30px;
+                    font-weight: 800;
+                    align-items: center;
+                    letter-spacing: 0.1875px;
+                    color: #FFFFFF;
+                }
+            }
+        }

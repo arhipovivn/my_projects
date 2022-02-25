@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstTask</title>
+</head>
+
+<body>
+    <script>
+        function multiArray(str, limit, searchValue) {
+
+
+            let arrayFromStr = [...str.toUpperCase()];
+            let arrValue = [...searchValue.toUpperCase()]; // добавил метод если вдруг слово будет введено в нижнем регистре 
+            let sizeMatrix = +limit; // привожу к типу num если получаем значение через prompt
+            console.log(arrValue);
+            let matrix = [];
+
+            for (var i = 0; i < arrayFromStr.length; i += sizeMatrix) {
+                matrix.push(arrayFromStr.slice(i, i + sizeMatrix));
+            }
+            console.log(matrix);
+            let subStr = '';
+            let finishStr = '';
+            for (let k = 0; k < arrValue.length; k++) {
+                for (let i = 0; i < matrix.length; i++) {
+                    for (let j = 0; j < matrix.length; j++) {
+
+                        if (arrValue[k] === matrix[i][j] && !subStr.includes(arrValue[k])) {
+                            subStr += arrValue[k];
+                            finishStr += '\tЭлемент ' + arrValue[k] + ' находится  в ячейке  ' + `[${i},${j}] \n `;
+
+                        }
+                    }
+                }
+            }
+            console.log(finishStr);
+
+        }
+
+        multiArray('QLGNAEKIRLRNGEAE', 4, 'king');
+        // multiArray(prompt('Введите символы из которых будет состоять матрица например: QLGNAEKIRLRNGEAE'), prompt('Введите размерность квадратной матрицы N, N-количество столбцов и строк '), prompt('Введите символы которые необходимо найти в массиве, например: QENI'));
+    </script>
+</body>
+
+</html>
