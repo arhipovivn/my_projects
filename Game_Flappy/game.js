@@ -1,7 +1,7 @@
 let cvs = document.getElementById('canvas');
 let ctx = cvs.getContext("2d");
 
-let bird = new Image(); // Создание объекта
+let bird = new Image(); // Создание объектаа
 let bg = new Image();
 let fg = new Image();
 let pipeUp = new Image();
