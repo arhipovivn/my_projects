@@ -6,7 +6,7 @@
 
 //     fs.mkdir('./files', () => {}); // содзание папки 
 
-
+// fgdf
 //     fs.writeFile('./files/text1.txt', data, () => {}) // создал полную копию text.txt
 // });
 // fs.rmdir('./files', () => {});
