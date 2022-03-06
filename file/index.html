@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript поиск по странице</h2>
+    <input type="text" id="text-to-find" value="">
+    <input type="button" onclick="javascript: FindOnPage('text-to-find'); return false;" value="Искать" />
+    <br/><i>Введите слово или фразу для поиска.</i>
+    <hr/>
+    <input type="file" onchange="onFilesSelect(event)" />
+    <pre id="data"></pre>
+
+    <script>
+        function saveFile(file, blob) {
+            var url = URL.createObjectURL(blob);
+
+            var a = document.createElement('a');
+            a.download = file.name;
+            a.href = url;
+            a.click();
+
+            // очищаем object URL
+            setTimeout(function() {
+                URL.revokeObjectURL(url);
+            }, 2000);
+        }
+
+        function onFilesSelect(e) {
+            // получаем объект FileList
+            var files = e.target.files;
+
+            // Перебираем все файлы в FileList'е
+            for (var i = 0; i < files.length; i++) {
+                let file = files[i];
+                var fileReader = new FileReader();
+                fileReader.onload = function(e) {
+                    // сохраняем текст файла в переменную
+                    var textContent = e.target.result;
+
+                    // выводим на странице
+                    document.getElementById('data').innerHTML = textContent;
+
+                    // меняем что-то в строке
+                    var replaced = textContent.replace(/\w/g, '1$&1');
+
+                    // формируем blob
+                    var blob = new Blob([replaced]);
+
+                    // пытаемся сохранить
+                    if (!window.saveAs) {
+                        saveFile(file, blob);
+                    } else {
+                        window.saveAs(blob, file.name);
+                    }
+
+                }
+
+                // читаем файл как текст
+                fileReader.readAsText(file);
+            }
+        }
+    </script>
+
+
+
+
+    <script type="text/javascript">
+        var lastResFind = ""; // последний удачный результат
+        var copy_page = ""; // копия страницы в ихсодном виде
+        function TrimStr(s) {
+            s = s.replace(/^\s+/g, '');
+            return s.replace(/\s+$/g, '');
+        }
+
+        function FindOnPage(inputId) { //ищет текст на странице, в параметр передается ID поля для ввода
+            var obj = window.document.getElementById(inputId);
+            var textToFind;
+
+            if (obj) {
+                textToFind = TrimStr(obj.value); //обрезаем пробелы
+            } else {
+                alert("Введенная фраза не найдена");
+                return;
+            }
+            if (textToFind == "") {
+                alert("Вы ничего не ввели");
+                return;
+            }
+
+            if (document.body.innerHTML.indexOf(textToFind) == "-1")
+                alert("Ничего не найдено, проверьте правильность ввода!");
+
+            if (copy_page.length > 0)
+                document.body.innerHTML = copy_page;
+            else copy_page = document.body.innerHTML;
+
+
+            document.body.innerHTML = document.body.innerHTML.replace(eval("/name=" + lastResFind + "/gi"), " "); //стираем предыдущие якори для скрола
+            document.body.innerHTML = document.body.innerHTML.replace(eval("/" + textToFind + "/gi"), "<a name=" + textToFind + " style='background:red'>" + textToFind + "</a>"); //Заменяем найденный текст ссылками с якорем;
+            lastResFind = textToFind; // сохраняем фразу для поиска, чтобы в дальнейшем по ней стереть все ссылки
+            window.location = '#' + textToFind; //перемещаем скрол к последнему найденному совпадению
+        }
+    </script>
+
+</body>
+
+
+
+
+
+
+</html>
