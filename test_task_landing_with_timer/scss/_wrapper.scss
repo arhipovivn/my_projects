@@ -1,0 +1,356 @@
+    .wrapper {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 950px;
+        background: #FFFFFF;
+        .cont {
+            display: flex;
+            justify-content: center;
+            .logo {
+                position: absolute;
+                top: 6.32%;
+                bottom: 87.37%;
+            }
+        }
+        .vector2 {
+            position: absolute;
+            left: 80vw;
+            top: 0;
+        }
+        .vector2 img {
+            height: 20vw;
+            width: 20vw;
+        }
+        .vector1 img {
+            height: 30vw;
+            width: 40vw;
+        }
+        .vector1 {
+            position: absolute;
+            left: -3vw;
+        }
+        .mainText {
+            display: flex;
+            justify-content: center;
+            top: 213px;
+            .uptext {
+                position: absolute;
+                height: 15%;
+                top: 23%;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 5vw;
+                line-height: 104%;
+                /* identical to box height, or 75px */
+                text-align: center;
+                text-align: center;
+                text-transform: uppercase;
+                color: #162C4E;
+                opacity: 0.39;
+            }
+            .downtext {
+                position: absolute;
+                width: 400px;
+                height: 54px;
+                top: 31%;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.6vw;
+                line-height: 150%;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.8);
+            }
+        }
+        #timer {
+            position: absolute;
+            width: 100%;
+            height: 129px;
+            top: 382px;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 6vw;
+            line-height: 100%;
+            text-align: center;
+            color: #162C4E;
+        }
+        .date {
+            position: absolute;
+            display: flex;
+            width: 48%;
+            justify-content: space-between;
+            justify-items: center;
+            height: 10%;
+            top: 52%;
+            left: 27%;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .date li {
+            padding-top: 1.3vw;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.5vw;
+            line-height: 100%;
+            color: #FFFFFF;
+            width: 30%;
+            background-image: url("./image/Vector.png");
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: 10vw;
+        }
+        .textAfterDate {
+            display: flex;
+            justify-content: center;
+            margin-top: 583px;
+            height: 27px;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 150%;
+            color: rgba(0, 0, 0, 0.8);
+        }
+        .button-wrapper button {
+            border-radius: 40px;
+            width: 240px;
+            height: 60px;
+            border: 0px solid #fff;
+            outline: none;
+        }
+        .button-wrapper {
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+        }
+        .footer {
+            position: absolute;
+            width: 100%;
+            height: 192px;
+            top: 758px;
+            background: #162C4E;
+            form {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 61px;
+                .search {
+                    display: flex;
+                    justify-content: center;
+                    input[type=text] {
+                        position: absolute;
+                        width: 35vw;
+                        height: 59px;
+                        background: #FFFFFF;
+                        border: 1px solid rgba(0, 0, 0, 0.8);
+                        box-sizing: border-box;
+                        border-radius: 40px;
+                    }
+                    input[placeholder] {
+                        padding: 1.5vw 1vw 1.5vw 2vw;
+                        font-family: "Roboto";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 1.7vw;
+                    }
+                    button {
+                        z-index: 900;
+                        border: none;
+                        outline: none;
+                        width: 43px;
+                        height: 43px;
+                        margin-left: 29.5vw;
+                        margin-top: 8px;
+                        border-radius: 40px;
+                        border: 1px solid rgba(255, 255, 255, 0.8);
+                        background-color: red;
+                    }
+                }
+            }
+        }
+        #popup {
+            z-index: 1000;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(22, 44, 78, 0.6);
+            opacity: 1;
+            display: none;
+            transition: all 0.8s ease 0s;
+            .popup_body {
+                min-height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 30px 10px;
+                .popup_content {
+                    background-color: rgb(255, 255, 255);
+                    width: 320px;
+                    height: 320px;
+                    color: black;
+                    max-width: 800px;
+                    padding: 30px;
+                    position: relative;
+                    .popup_title {
+                        position: absolute;
+                        left: 0%;
+                        right: 0%;
+                        top: 26.34%;
+                        bottom: 63.71%;
+                        font-family: "Poppins";
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 36px;
+                        line-height: 104%;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #162C4E;
+                    }
+                    .popup_close {
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        font-size: 20px;
+                        color: black;
+                    }
+                    .popup_text {
+                        position: absolute;
+                        left: 7.5%;
+                        right: 5%;
+                        top: 44.09%;
+                        bottom: 43.01%;
+                        font-family: "Poppins";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 150%;
+                        text-align: center;
+                        color: rgba(0, 0, 0, 0.8);
+                    }
+                    .close-pupop {
+                        position: absolute;
+                        left: 20%;
+                        right: 17.5%;
+                        top: 65.05%;
+                        bottom: 18.82%;
+                        border: 0px solid #fff;
+                        outline: none;
+                        font-family: "Poppins";
+                        font-size: 18px;
+                        color: #fff;
+                        background: #1D4169;
+                        border-radius: 40px;
+                    }
+                }
+            }
+        }
+        @media (min-width:678px) {
+            .dateForScr {
+                display: none;
+            }
+        }
+        @media (max-width: 768px) {
+            .date {
+                display: none;
+            }
+            .dateForScr {
+                position: absolute;
+                display: flex;
+                width: 60%;
+                justify-content: space-between;
+                justify-items: center;
+                height: 10%;
+                top: 52%;
+                left: 20%;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .dateForScr li {
+                padding-top: 1.3vw;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.5vw;
+                line-height: 100%;
+                color: #FFFFFF;
+                width: 35%;
+                background-image: url("./image/Vector.png");
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: 10vw;
+            }
+            #timer {
+                font-size: 8vw;
+            }
+            .mainText {
+                .downtext {
+                    font-size: 2.1vw;
+                    width: 250px;
+                }
+            }
+            .footer {
+                form {
+                    .search {
+                        input[type=text] {
+                            position: absolute;
+                            width: 360px;
+                            height: 59px;
+                            border-radius: 40px;
+                        }
+                        input[placeholder] {
+                            font-size: 16px;
+                        }
+                        button {
+                            margin-left: 290px;
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 425px) {
+            .wrapper {
+                height: 812px;
+            }
+            .dateForScr {
+                top: 46%;
+            }
+            #timer {
+                font-size: 10vw;
+            }
+            .textAfterDate {
+                margin-top: 490px;
+            }
+            .mainText {
+                .uptext {
+                    width: 320px;
+                    font-size: 36px;
+                }
+                .downtext {
+                    font-size: 16px;
+                    width: 200px;
+                }
+            }
+            .footer {
+                form {
+                    .search {
+                        input[type=text] {
+                            position: absolute;
+                            width: 280px;
+                            height: 59px;
+                            border-radius: 40px;
+                        }
+                        input[placeholder] {
+                            font-size: 16px;
+                        }
+                        button {
+                            margin-left: 220px;
+                        }
+                    }
+                }
+            }
+        }
+    }

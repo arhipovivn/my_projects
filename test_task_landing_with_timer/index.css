@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy-Bold";
+}
+* ul li {
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 950px;
+  background: #FFFFFF;
+}
+.wrapper .cont {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .cont .logo {
+  position: absolute;
+  top: 6.32%;
+  bottom: 87.37%;
+}
+.wrapper .vector2 {
+  position: absolute;
+  left: 80vw;
+  top: 0;
+}
+.wrapper .vector2 img {
+  height: 20vw;
+  width: 20vw;
+}
+.wrapper .vector1 img {
+  height: 30vw;
+  width: 40vw;
+}
+.wrapper .vector1 {
+  position: absolute;
+  left: -3vw;
+}
+.wrapper .mainText {
+  display: flex;
+  justify-content: center;
+  top: 213px;
+}
+.wrapper .mainText .uptext {
+  position: absolute;
+  height: 15%;
+  top: 23%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5vw;
+  line-height: 104%;
+  /* identical to box height, or 75px */
+  text-align: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #162C4E;
+  opacity: 0.39;
+}
+.wrapper .mainText .downtext {
+  position: absolute;
+  width: 400px;
+  height: 54px;
+  top: 31%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6vw;
+  line-height: 150%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+.wrapper #timer {
+  position: absolute;
+  width: 100%;
+  height: 129px;
+  top: 382px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 6vw;
+  line-height: 100%;
+  text-align: center;
+  color: #162C4E;
+}
+.wrapper .date {
+  position: absolute;
+  display: flex;
+  width: 48%;
+  justify-content: space-between;
+  justify-items: center;
+  height: 10%;
+  top: 52%;
+  left: 27%;
+  text-align: center;
+  vertical-align: middle;
+}
+.wrapper .date li {
+  padding-top: 1.3vw;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  line-height: 100%;
+  color: #FFFFFF;
+  width: 30%;
+  background-image: url("./image/Vector.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 10vw;
+}
+.wrapper .textAfterDate {
+  display: flex;
+  justify-content: center;
+  margin-top: 583px;
+  height: 27px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
+}
+.wrapper .button-wrapper button {
+  border-radius: 40px;
+  width: 240px;
+  height: 60px;
+  border: 0px solid #fff;
+  outline: none;
+}
+.wrapper .button-wrapper {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .footer {
+  position: absolute;
+  width: 100%;
+  height: 192px;
+  top: 758px;
+  background: #162C4E;
+}
+.wrapper .footer form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 61px;
+}
+.wrapper .footer form .search {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .footer form .search input[type=text] {
+  position: absolute;
+  width: 35vw;
+  height: 59px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 40px;
+}
+.wrapper .footer form .search input[placeholder] {
+  padding: 1.5vw 1vw 1.5vw 2vw;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.7vw;
+}
+.wrapper .footer form .search button {
+  z-index: 900;
+  border: none;
+  outline: none;
+  width: 43px;
+  height: 43px;
+  margin-left: 29.5vw;
+  margin-top: 8px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: red;
+}
+.wrapper #popup {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 44, 78, 0.6);
+  opacity: 1;
+  display: none;
+  transition: all 0.8s ease 0s;
+}
+.wrapper #popup .popup_body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.wrapper #popup .popup_body .popup_content {
+  background-color: white;
+  width: 320px;
+  height: 320px;
+  color: black;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+}
+.wrapper #popup .popup_body .popup_content .popup_title {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 26.34%;
+  bottom: 63.71%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 104%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #162C4E;
+}
+.wrapper #popup .popup_body .popup_content .popup_close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: black;
+}
+.wrapper #popup .popup_body .popup_content .popup_text {
+  position: absolute;
+  left: 7.5%;
+  right: 5%;
+  top: 44.09%;
+  bottom: 43.01%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+.wrapper #popup .popup_body .popup_content .close-pupop {
+  position: absolute;
+  left: 20%;
+  right: 17.5%;
+  top: 65.05%;
+  bottom: 18.82%;
+  border: 0px solid #fff;
+  outline: none;
+  font-family: "Poppins";
+  font-size: 18px;
+  color: #fff;
+  background: #1D4169;
+  border-radius: 40px;
+}
+@media (min-width: 678px) {
+  .wrapper .dateForScr {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper .date {
+    display: none;
+  }
+  .wrapper .dateForScr {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    justify-items: center;
+    height: 10%;
+    top: 52%;
+    left: 20%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .wrapper .dateForScr li {
+    padding-top: 1.3vw;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5vw;
+    line-height: 100%;
+    color: #FFFFFF;
+    width: 35%;
+    background-image: url("./image/Vector.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 10vw;
+  }
+  .wrapper #timer {
+    font-size: 8vw;
+  }
+  .wrapper .mainText .downtext {
+    font-size: 2.1vw;
+    width: 250px;
+  }
+  .wrapper .footer form .search input[type=text] {
+    position: absolute;
+    width: 360px;
+    height: 59px;
+    border-radius: 40px;
+  }
+  .wrapper .footer form .search input[placeholder] {
+    font-size: 16px;
+  }
+  .wrapper .footer form .search button {
+    margin-left: 290px;
+  }
+}
+@media (max-width: 425px) {
+  .wrapper .wrapper {
+    height: 812px;
+  }
+  .wrapper .dateForScr {
+    top: 46%;
+  }
+  .wrapper #timer {
+    font-size: 10vw;
+  }
+  .wrapper .textAfterDate {
+    margin-top: 490px;
+  }
+  .wrapper .mainText .uptext {
+    width: 320px;
+    font-size: 36px;
+  }
+  .wrapper .mainText .downtext {
+    font-size: 16px;
+    width: 200px;
+  }
+  .wrapper .footer form .search input[type=text] {
+    position: absolute;
+    width: 280px;
+    height: 59px;
+    border-radius: 40px;
+  }
+  .wrapper .footer form .search input[placeholder] {
+    font-size: 16px;
+  }
+  .wrapper .footer form .search button {
+    margin-left: 220px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
