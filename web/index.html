@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="fetch.js"></script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+
+<body>
+    <!doctype html>
+    <html>
+
+    <head>
+        <script type="text/javascript">
+            const requestUrl = "https://jsonplaceholder.typicode.com/users";
+            const xhr = new XMLHttpRequest();
+
+            xhr.open('GET', requestUrl);
+            xhr.responseType = 'json'
+            xhr.onload = () => {
+                if (xhr.status >= 400) {
+                    console.error(xhr.response)
+                } else {
+                    console.log(xhr.response)
+                    var div = document.getElementById('data');
+
+                    for (var i = 0; i < xhr.response.length; i++) {
+                        div.innerHTML = div.innerHTML + "<div class='name' id=" + i + ">" + "name: " + xhr.response[i].name + "</div>" + "<br>"
+                        div.innerHTML = div.innerHTML + "<div class='email' id=" + i + ">" + "email:" + xhr.response[i].email + "</div>" + "<br>";
+                    }
+
+                    console.log(xhr.response);
+                }
+                xhr.onerror = () => {
+                    console.log(xhr.response)
+                }
+            }
+            xhr.send();
+        </script>
+    </head>
+
+    <body>
+        <div id="data">
+
+        </div>
+        <style>
+            #data {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr 2fr);
+            }
+            
+            .name {
+                background-color: aqua;
+            }
+            
+            .email {
+                background-color: red;
+            }
+        </style>
+    </body>
+
+    </html>
+</body>
+
+</html>
